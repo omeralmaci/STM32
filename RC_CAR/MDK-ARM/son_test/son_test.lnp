@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"son_test\stm32f1xx_it.o"
+"son_test\stm32f1xx_hal_msp.o"
+"son_test\main.o"
+"son_test\system_stm32f1xx.o"
+"son_test\stm32f1xx_hal_dma.o"
+"son_test\stm32f1xx_hal_rcc.o"
+"son_test\stm32f1xx_hal_cortex.o"
+"son_test\stm32f1xx_hal_pwr.o"
+"son_test\stm32f1xx_hal_flash.o"
+"son_test\stm32f1xx_hal_gpio.o"
+"son_test\stm32f1xx_hal_gpio_ex.o"
+"son_test\stm32f1xx_hal_rcc_ex.o"
+"son_test\stm32f1xx_hal.o"
+"son_test\stm32f1xx_hal_flash_ex.o"
+"son_test\stm32f1xx_hal_uart.o"
+"son_test\stm32f1xx_hal_tim_ex.o"
+"son_test\stm32f1xx_hal_tim.o"
+"son_test\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "son_test\son_test.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "son_test.map" -o son_test\son_test.axf
